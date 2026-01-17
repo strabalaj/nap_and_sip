@@ -1,0 +1,85 @@
+# Xcode
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+# Build
+build/
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# CocoaPods (if used later)
+Pods/
+*.xcworkspace
+
+# Carthage (if used later)
+Carthage/Build/
+Carthage/Checkouts/
+
+# Firebase
+GoogleService-Info.plist
+
+# Secrets and credentials
+*.pem
+*.p12
+*.key
+*.mobileprovision
+*.provisionprofile
+secrets/
+.env
+.env.*
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+.vscode/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Testing
+*.gcno
+*.gcda
+coverage/
+*.lcov
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Archives
+*.xcarchive
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Fastlane (for future CI/CD)
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Documentation generated files
+docs/_build/
