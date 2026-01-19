@@ -1,0 +1,25 @@
+import SwiftUI
+
+struct ContentView: View {
+    @EnvironmentObject var authViewModel: AuthViewModel
+
+    var body: some View {
+        Group {
+            if authViewModel.isAuthenticated {
+                if authViewModel.hasCompletedOnboarding {
+                    TabBarView()
+                } else {
+                    BabySetupView()
+                }
+            } else {
+                AppLoginView()
+            }
+        }
+        .animation(.easeInOut, value: authViewModel.isAuthenticated)
+    }
+}
+
+#Preview {
+    ContentView()
+        .environmentObject(AuthViewModel())
+}
